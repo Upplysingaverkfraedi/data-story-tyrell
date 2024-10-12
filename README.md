@@ -6,7 +6,7 @@
 
 1. **Skýrsla** – Þið þurfið að skila skýrslu þar sem þið útskýrið hvernig þið nálguðust gagnaöflun,
    meðhöndlun gagna og hvaða niðurstöður þið teljið markverðastar og setjið fram sem mælaborð.
-2. **Mælaborð og kynning** – Þið þurfið að hanna mælaborð og halda 5-10 mínútna kynningu þar sem
+2. **Mælaborð og kynning** – Þið þurfið að hanna mælaborð og halda 7 mínúta kynningu þar sem
    þið útskýrið mælaborðið fyrir bekknum. Í kynningunni þarf að sýna hvernig mælaborðið virkar og
    hvers vegna samnemendur ættu að nýta sér það.
 
