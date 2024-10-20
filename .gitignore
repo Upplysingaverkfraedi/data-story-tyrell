@@ -12,6 +12,9 @@ config.yml
 # User-specific files
 .Ruserdata
 
+#lykilorð
+config.yml
+
 # Example code in package build process
 *-Ex.R
 

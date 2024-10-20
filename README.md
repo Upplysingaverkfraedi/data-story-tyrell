@@ -1,5 +1,15 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/t4XiNpEJ)
 # Gagnafrásögn, kynning og mælaborð
+### Keyrsla á kóða
+
+Keyrsla á forriti
+1. Nauðsynleg forrit: Gakktu úr skugga um að R, RStudio og nauðsynlegir pakkar séu uppsettir.
+2. Settu upp pakkana:
+   install.packages(c("DBI", "RPostgres", "ggplot2", "dplyr", "sf", “leaflet”, "config"))
+3. Aðlagaðu config.yml: Tryggðu að tengingar upplýsingar séu réttar í config.yml.
+4. Keyrðu kóðann: Keyrðu .R skrárnar í sitthvoru lagi í RStudio til að sjá niðurstöðurnar.
+Athugasemd um viðkvæmar upplýsingar: Tryggðu að config.yml sé ekki deilt á opinberum stöðum, þar sem það inniheldur viðkvæmar upplýsingar um notendanöfn og lykilorð. Brot á þessu veldur því að orðspor þitt sem forritari fer í vaskinn.
+
 
 Til að keyra kóða fyrir töflu sem sýnir mismunandi flatarmál fyrir konungsríki (R kóði):
 keyra þessar fjórar línur til að fá pakka 
