@@ -1,6 +1,17 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/t4XiNpEJ)
 # Gagnafrásögn, kynning og mælaborð
 
+Til að keyra kóða fyrir töflu sem sýnir mismunandi flatarmál fyrir konungsríki (R kóði):
+keyra þessar fjórar línur til að fá pakka 
+install.packages("DBI")
+install.packages("RPostgres")
+install.packages("ggplot2")
+install.packages("dplyr")
+
+svo keyra gefinn kóða í umhverfi sem styður R kóða. 
+
+
+
 ## Verkefni
 
 Þetta verkefni er tvíþætt:
