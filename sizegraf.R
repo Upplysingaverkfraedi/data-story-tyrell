@@ -67,3 +67,4 @@ ggplot(kingdom_sizes, aes(x = kingdom_name, y = size, fill = kingdom_name)) + # 
 
 # Loka tengingunni við gagnagrunninn
 dbDisconnect(con)
+
