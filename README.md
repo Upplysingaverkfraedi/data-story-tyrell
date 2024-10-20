@@ -1,4 +1,17 @@
 # Gagnafrásögn, kynning og mælaborð
+### Keyrsla á kóða
+
+Til að keyra kóða fyrir töflu sem sýnir mismunandi flatarmál fyrir konungsríki (R kóði):
+keyra þessar fjórar línur til að fá pakka 
+install.packages("DBI")
+install.packages("RPostgres")
+install.packages("ggplot2")
+install.packages("dplyr")
+
+svo keyra gefinn kóða í umhverfi sem styður R kóða. 
+
+
+
 
 ## Verkefni
 
