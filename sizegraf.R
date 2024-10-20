@@ -1,11 +1,25 @@
+ # Hlaða inn nauðsynlegum pökkum
+library(DBI)
+library(RPostgres)
+library(ggplot2)
+library(config)
 
-# install.packages("ggplot2")
-# install.packages("dplyr")
+# Lesa upplýsingar úr config.yml
+db_config <- config::get("db")
 
-# hér er con skilgreint, con tengir gögn frá postgreSQL í RStudio (í config.yml skrá)
+# Tengjast PostgreSQL gagnagrunninum
+con <- dbConnect(
+  RPostgres::Postgres(),
+  dbname = db_config$name,
+  host = db_config$host,
+  port = db_config$port,
+  user = db_config$user,
+  password = db_config$password,
+  sslmode = db_config$sslmode
+)
 
-library(dplyr)
-kingdom_sizes <- data.frame(kingdom_id = integer(), size = integer())  # Búa til dataframe sem inniheldu gefinn gögn
+# Búa til dataframe fyrir konungsríkin
+kingdom_sizes <- data.frame(kingdom_id = integer(), size = integer())  # Búa til dataframe sem inniheldur gefin gögn
 
 # Lykkja sem leitar í gegnum kingdom_sizes
 for (id in 1:11) {  
@@ -28,13 +42,13 @@ kingdom_names <- c(
   "10" = "The Crownsland",
   "11" = "The Reach"
 )
+
 kingdom_sizes$kingdom_name <- kingdom_names[as.character(kingdom_sizes$kingdom_id)] # Setja nýja breytu í dataframe
 
-#loada inn ggplot til að gera graf
-library(ggplot2)
+# Búa til graf
 ggplot(kingdom_sizes, aes(x = kingdom_name, y = size, fill = kingdom_name)) + # gera graf út frá nýju breytu og size
   geom_bar(stat = "identity", color = "black") +
-  labs(title = "Stærð konungsríkja í Westeros", x = "Konungsríki", y = "Stærð konunsríkja í ferkílómetrum") +
+  labs(title = "Stærð konungsríkja í Westeros", x = "Konungsríki", y = "Stærð konungsríkja í ferkílómetrum") +
   scale_y_continuous(labels = scales::comma) +
   scale_fill_manual(values = c(
     "The Riverlands" = "lightgreen", 
@@ -51,14 +65,6 @@ ggplot(kingdom_sizes, aes(x = kingdom_name, y = size, fill = kingdom_name)) + # 
   theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
   guides(fill = FALSE) 
 
-# 5,The North
-# 8,The Vale
-# 3,Gift
-# 1,The Riverlands
-# 9,The Westerlands
-# 6,Dorne
-# 11,The Reach
-# 7,The Stormlands
-# 2,Iron Islands
-# 10,The Crownsland
+# Loka tengingunni við gagnagrunninn
+dbDisconnect(con)
 

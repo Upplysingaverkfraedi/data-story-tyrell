@@ -30,3 +30,4 @@ Tryggðu að `config.yml` sé ekki deilt á opinberum stöðum, þar sem það i
 - **tidyr**: Auðveldar gagnavinnslu.
 - **ggplot2**: Til að búa til gröf út frá gögnum.
 
+
