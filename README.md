@@ -1,16 +1,13 @@
 # Gagnafrásögn, kynning og mælaborð
 ### Keyrsla á kóða
 
-Til að keyra kóða fyrir töflu sem sýnir mismunandi flatarmál fyrir konungsríki (R kóði):
-keyra þessar fjórar línur til að fá pakka 
-install.packages("DBI")
-install.packages("RPostgres")
-install.packages("ggplot2")
-install.packages("dplyr")
-
-svo keyra gefinn kóða í umhverfi sem styður R kóða. 
-
-
+Keyrsla á forriti
+1. Nauðsynleg forrit: Gakktu úr skugga um að R, RStudio og nauðsynlegir pakkar séu uppsettir.
+2. Settu upp pakkana:
+   install.packages(c("DBI", "RPostgres", "ggplot2", "dplyr", "sf", “leaflet”, "config"))
+3. Aðlagaðu config.yml: Tryggðu að tengingar upplýsingar séu réttar í config.yml.
+4. Keyrðu kóðann: Keyrðu .R skrárnar í sitthvoru lagi í RStudio til að sjá niðurstöðurnar.
+Athugasemd um viðkvæmar upplýsingar: Tryggðu að config.yml sé ekki deilt á opinberum stöðum, þar sem það inniheldur viðkvæmar upplýsingar um notendanöfn og lykilorð. Brot á þessu veldur því að orðspor þitt sem forritari fer í vaskinn.
 
 
 ## Verkefni
