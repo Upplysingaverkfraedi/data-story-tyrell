@@ -58,3 +58,9 @@ rsconnect/
 .DS_Store
 .vscode/
 .idea/
+
+# lykilord o.fl.
+config.yml
+
+# Sensitive data
+*.sqlite
