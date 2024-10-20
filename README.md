@@ -1,4 +1,4 @@
-# Skýrsla um Gagnavinnslu í R
+# Gagnasaga um Krúnuleikana
 
 ## TL;DR
 Þetta verkefni snýst um að safna og greina gögn um konungsríki í Westeros til þess að réttlæta stöðu Dorne sem eitt af konungsríkjunum sjö. Helstu niðurstöður okkar sýndu að fjöldi áhugaverðra staða í Dorne voru jafn margir og meðal konungsríkisins, og flatarmál þess væri það þriðja stærsta.
