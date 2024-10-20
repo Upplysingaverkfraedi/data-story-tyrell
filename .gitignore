@@ -2,12 +2,18 @@
 .Rhistory
 .Rapp.history
 
+#lykilorð
+config.yml
+
 # Session Data files
 .RData
 .RDataTmp
 
 # User-specific files
 .Ruserdata
+
+#lykilorð
+config.yml
 
 # Example code in package build process
 *-Ex.R
@@ -55,3 +61,9 @@ rsconnect/
 .DS_Store
 .vscode/
 .idea/
+
+# lykilord o.fl.
+config.yml
+
+# Sensitive data
+*.sqlite
